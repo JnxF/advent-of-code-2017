@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AdventOfCode2017
 {
@@ -42,31 +40,19 @@ namespace AdventOfCode2017
                 if (inRubish)
                 {
                     if (c == '!')
-                    {
                         exclamationDetected = true;
-                    }
                     else if (c == '>')
-                    {
                         inRubish = false;
-                    }
                 }
-
                 else
                 {
-                    if (c == '{')
-                    {
-                        ++height;
-                    }
+                    if (c == '{') ++height;
                     else if (c == '}')
                     {
                         total += height;
                         --height;
                     }
-                    else if (c == '<')
-                    {
-                        inRubish = true;
-                    }
-
+                    else if (c == '<') inRubish = true;
                 }
             }
             return total.ToString();
@@ -88,25 +74,16 @@ namespace AdventOfCode2017
                 if (inRubish)
                 {
                     if (c == '!')
-                    {
                         exclamationDetected = true;
-                    }
                     else if (c == '>')
-                    {
                         inRubish = false;
-                    }
                     else
-                    {
                         ++totalRubish;
-                    }
                 }
-
                 else if (c == '<')
-                    {
-                        inRubish = true;
-                    }
-
+                    inRubish = true;
             }
+
             return totalRubish.ToString();
         }
     }

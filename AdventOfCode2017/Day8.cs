@@ -54,7 +54,6 @@ namespace AdventOfCode2017
                     registerBank[instruction.registerComparison] = 0;
                 }
 
-                // Check if the condition is true
                 bool ok = (instruction.operatorComparison == "==" && registerBank[instruction.registerComparison] == instruction.quantityComparison) ||
                     (instruction.operatorComparison == "!=" && registerBank[instruction.registerComparison] != instruction.quantityComparison) ||
                     (instruction.operatorComparison == "<" && registerBank[instruction.registerComparison] < instruction.quantityComparison) ||
@@ -62,10 +61,7 @@ namespace AdventOfCode2017
                     (instruction.operatorComparison == ">=" && registerBank[instruction.registerComparison] >= instruction.quantityComparison) ||
                     (instruction.operatorComparison == "<=" && registerBank[instruction.registerComparison] <= instruction.quantityComparison);
 
-                if (!ok)
-                {
-                    continue;
-                }
+                if (!ok) continue;
 
                 if (instruction.increment)
                 {
@@ -75,7 +71,6 @@ namespace AdventOfCode2017
                 {
                     registerBank[instruction.register] -= instruction.quantity;
                 }
-
                 maxValue = Math.Max(maxValue, registerBank[instruction.register]);
             }
         }
