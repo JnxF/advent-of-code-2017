@@ -7,10 +7,6 @@ namespace AdventOfCode2017
 {
     public class Day6 : ISolver
     {
-        public static void Main()
-        {
-            Console.WriteLine();
-        }
 
         private int[] Input()
         {
