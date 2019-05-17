@@ -36,6 +36,14 @@ namespace AdventOfCode2017Tests
             Assert.Equal("208", _.SecondPart());
         }
 
+        [Fact]
+        public void Day5()
+        {
+            var _ = new Day5();
+            Assert.Equal("355965", _.FirstPart());
+            Assert.Equal("26948068", _.SecondPart());
+        }
+
 
         [Fact]
         public void Day6()
@@ -43,6 +51,53 @@ namespace AdventOfCode2017Tests
             var _ = new Day6();
             Assert.Equal("12841", _.FirstPart());
             Assert.Equal("8038", _.SecondPart());
+        }
+
+
+        [Fact]
+        public void Day8()
+        {
+            var _ = new Day8();
+            Assert.Equal("5849", _.FirstPart());
+            Assert.Equal("6702", _.SecondPart());
+        }
+
+
+        [Fact]
+        public void Day9()
+        {
+            var _ = new Day9();
+            Assert.Equal("15922", _.FirstPart());
+            Assert.Equal("7314", _.SecondPart());
+        }
+
+        [Theory]
+        [InlineData(@"{}", 1)]
+        [InlineData(@"{{{}}}", 6)]
+        [InlineData(@"{{},{}}", 5)]
+        [InlineData(@"{{{},{},{{}}}}", 16)]
+        [InlineData(@"{<a>,<a>,<a>,<a>}", 1)]
+        [InlineData(@"{{<ab>},{<ab>},{<ab>},{<ab>}}", 9)]
+        [InlineData(@"{{<!!>},{<!!>},{<!!>},{<!!>}}", 9)]
+        [InlineData(@"{{<a!>},{<a!>},{<a!>},{<ab>}}", 3)]
+        public void Day9_FirstPart(string expression, int value)
+        {
+            var _ = new Day9(expression);
+            Assert.Equal(value.ToString(), _.FirstPart());
+        }
+
+        [Theory]
+        [InlineData(@"<>", 0)]
+        [InlineData(@"<random characters>", 17)]
+        [InlineData(@"<<<<>", 3)]
+        [InlineData(@"<{!>}>", 2)]
+        [InlineData(@"<!!>", 0)]
+        [InlineData(@"<!!!>>", 0)]
+        [InlineData("<{o\"i!a,<{i<a>", 10)]
+        public void Day9_SecondPart(string expression, int value)
+        {
+            var _ = new Day9(expression);
+            Assert.Equal(value.ToString(), _.SecondPart());
         }
 
         [Fact]

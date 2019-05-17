@@ -8,13 +8,6 @@ namespace AdventOfCode2017
 {
     public class Day12 : ISolver
     {
-        public static void Main()
-        {
-            var k = new Day12();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart()); 
-        }
-
         bool[,] ReadMatrix()
         {
             var rawInput = Properties.Resources.Day12bis;

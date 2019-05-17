@@ -188,11 +188,172 @@ namespace AdventOfCode2017.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 2
+        ///0
+        ///-1
+        ///2
+        ///-2
+        ///-3
+        ///1
+        ///-2
+        ///0
+        ///-8
+        ///-1
+        ///-7
+        ///-8
+        ///-11
+        ///-7
+        ///-8
+        ///-7
+        ///2
+        ///-4
+        ///-4
+        ///-6
+        ///-9
+        ///0
+        ///-20
+        ///-7
+        ///-16
+        ///-10
+        ///-25
+        ///-3
+        ///-17
+        ///0
+        ///2
+        ///0
+        ///-29
+        ///-25
+        ///-8
+        ///-2
+        ///-19
+        ///0
+        ///-38
+        ///-29
+        ///-5
+        ///-24
+        ///2
+        ///-1
+        ///-30
+        ///0
+        ///-28
+        ///-43
+        ///-22
+        ///1
+        ///-12
+        ///-23
+        ///-23
+        ///-41
+        ///-12
+        ///-51
+        ///-56
+        ///-1
+        ///-57
+        ///-29
+        ///-32
+        ///-29
+        ///-55
+        ///1
+        ///-28
+        ///-29
+        ///-49
+        ///-56
+        ///-13
+        ///-67
+        ///-40
+        ///-10
+        ///-44
+        ///-32
+        ///-37
+        ///-49
+        ///-37
+        ///-72
+        ///-54
+        ///-22
+        ///-24
+        ///-31
+        ///-26
+        ///-45
+        ///-45
+        ///-45
+        ///-23
+        ///-41
+        ///-85
+        ///-2
+        ///-90
+        ///-31
+        ///-47
+        ///-81
+        ///-40
+        ///-43
+        ///-51
+        ///-61
+        ///-41
+        ///-64
+        ///-60
+        ///-5
+        ///-29
+        ///-18
+        ///-104
+        ///-70
+        ///-68
+        ///-53
+        ///-17
+        ///-58
+        ///-107
+        ///1
+        ///- [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day5 {
+            get {
+                return ResourceManager.GetString("Day5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 4	10	4	1	8	4	9	14	5	1	14	15	0	15	3	5.
         /// </summary>
         internal static string Day6 {
             get {
                 return ResourceManager.GetString("Day6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to hwv inc 149 if clj &gt;= -5
+        ///or inc 530 if hwv &gt; 144
+        ///d inc 131 if f &lt; 1
+        ///gnz dec -236 if jp != 0
+        ///mu dec 266 if sp &gt;= -6
+        ///t inc -146 if w &gt;= 8
+        ///w dec 825 if jp != 3
+        ///cto dec 403 if ino != 0
+        ///ino inc 17 if sp != 0
+        ///bt inc -341 if sp != 6
+        ///vv dec 824 if clj &gt;= -9
+        ///mu inc -371 if gnz &lt; -7
+        ///f dec 865 if w &gt; -828
+        ///cto inc 588 if noj == 0
+        ///mvh inc 484 if noj == 0
+        ///ino inc -728 if gnz &gt; -6
+        ///or inc -795 if nm &gt;= -9
+        ///q dec -87 if or != -274
+        ///q dec -889 if q &gt; 80
+        ///f dec 155 if t &lt;= -3
+        ///or dec 185 if nm &lt; 9
+        ///w inc -243  [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day8 {
+            get {
+                return ResourceManager.GetString("Day8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {{{{{{{&lt;!!&quot;!!!&gt;},&lt;&gt;},{&lt;o!&gt;},&lt;u!!i!!&apos;!&gt;,&lt;!!!&gt;,e{&apos;e!!!&gt;},&lt;!i&gt;}},{{&lt;&quot;o!!&quot;!&gt;,&lt;&gt;},&lt;!io&lt;&gt;},{{},&lt;!!!&gt;!&gt;,&lt;o&quot;e!&lt;!!!&gt;{,!!!&gt;{a!o,au!&gt;},&lt;&gt;}}},{{{&lt;e!}&gt;},{{&lt;!&gt;,,e!!!&gt;!!,&gt;},{&lt;a!!!&gt;&apos;!!!&gt;!!!!,!!!&gt;!!!&gt;!&gt;},&lt;&lt;{&quot;!!&gt;}},{{&lt;!&gt;&gt;,&lt;!&gt;},&lt;i!&gt;!&lt;&gt;},{&lt;!!&lt;u,a&quot;!&gt;},&lt;o{{!!{!!!&gt;i,!&gt;,&lt;i{!u&gt;,{&lt;a!&gt;e}o!&gt;!&gt;e&gt;}}}},{{&lt;i&lt;!&gt;,&lt;!!!&gt;,&lt;ei,!&gt;a&gt;,{}},{&lt;!!!&gt;},&lt;e&apos;&gt;,{}},{{&lt;!!!!u&lt;,&apos;}!&gt;,&lt;&quot;o&lt;&gt;}}}},{{{{{{&lt;!&gt;,&lt;o!!!auii!!!!!&gt;!!!&gt;,&lt;{&gt;}},&lt;},!!!&gt;!!!!!&gt;&gt;},{&lt;&apos;u&lt;&quot;{&gt;,{&lt;!!!!e!&gt;,&lt;&apos;a!!i&lt;!&gt;,&gt;}},{}},{{&lt;i}&lt;!u&lt;{!!!}!!e!{!,&gt;}},{&lt;!!e,!&gt;i&gt;,{}}},{{&lt;i!!!&gt;},&lt;{&apos;&apos;i!!!&gt;,!e!&gt;},&lt;!&gt;&quot;a{&gt;,&lt;!!&apos;u! [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day9 {
+            get {
+                return ResourceManager.GetString("Day9", resourceCulture);
             }
         }
     }
