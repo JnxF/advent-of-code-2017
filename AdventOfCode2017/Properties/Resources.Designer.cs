@@ -70,6 +70,90 @@ namespace AdventOfCode2017.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 0 &lt;-&gt; 396, 1867
+        ///1 &lt;-&gt; 1749
+        ///2 &lt;-&gt; 466, 675, 1661
+        ///3 &lt;-&gt; 3, 328, 1160
+        ///4 &lt;-&gt; 4, 953
+        ///5 &lt;-&gt; 1922
+        ///6 &lt;-&gt; 1273
+        ///7 &lt;-&gt; 7, 959
+        ///8 &lt;-&gt; 96, 274
+        ///9 &lt;-&gt; 9, 1036
+        ///10 &lt;-&gt; 1783
+        ///11 &lt;-&gt; 879
+        ///12 &lt;-&gt; 382, 1390
+        ///13 &lt;-&gt; 1214, 1473
+        ///14 &lt;-&gt; 434, 508, 1470
+        ///15 &lt;-&gt; 324, 747
+        ///16 &lt;-&gt; 195, 894
+        ///17 &lt;-&gt; 536
+        ///18 &lt;-&gt; 1024, 1198
+        ///19 &lt;-&gt; 1616
+        ///20 &lt;-&gt; 797
+        ///21 &lt;-&gt; 885
+        ///22 &lt;-&gt; 1001
+        ///23 &lt;-&gt; 569, 1496
+        ///24 &lt;-&gt; 392
+        ///25 &lt;-&gt; 32
+        ///26 &lt;-&gt; 820
+        ///27 &lt;-&gt; 655
+        ///28 &lt;-&gt; 1044
+        ///29 &lt;-&gt; 307, 675, 1518
+        ///30 &lt;-&gt; 1547, 1775, 1885
+        ///31 &lt;-&gt; 237
+        ///32 &lt;-&gt; 25, 1736
+        ///33 &lt; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day12 {
+            get {
+                return ResourceManager.GetString("Day12", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 0 &lt;-&gt; 396, 1867
+        ///1 &lt;-&gt; 1749
+        ///2 &lt;-&gt; 466, 675, 1661
+        ///3 &lt;-&gt; 3, 328, 1160
+        ///4 &lt;-&gt; 4, 953
+        ///5 &lt;-&gt; 1922
+        ///6 &lt;-&gt; 1273
+        ///7 &lt;-&gt; 7, 959
+        ///8 &lt;-&gt; 96, 274
+        ///9 &lt;-&gt; 9, 1036
+        ///10 &lt;-&gt; 1783
+        ///11 &lt;-&gt; 879
+        ///12 &lt;-&gt; 382, 1390
+        ///13 &lt;-&gt; 1214, 1473
+        ///14 &lt;-&gt; 434, 508, 1470
+        ///15 &lt;-&gt; 324, 747
+        ///16 &lt;-&gt; 195, 894
+        ///17 &lt;-&gt; 536
+        ///18 &lt;-&gt; 1024, 1198
+        ///19 &lt;-&gt; 1616
+        ///20 &lt;-&gt; 797
+        ///21 &lt;-&gt; 885
+        ///22 &lt;-&gt; 1001
+        ///23 &lt;-&gt; 569, 1496
+        ///24 &lt;-&gt; 392
+        ///25 &lt;-&gt; 32
+        ///26 &lt;-&gt; 820
+        ///27 &lt;-&gt; 655
+        ///28 &lt;-&gt; 1044
+        ///29 &lt;-&gt; 307, 675, 1518
+        ///30 &lt;-&gt; 1547, 1775, 1885
+        ///31 &lt;-&gt; 237
+        ///32 &lt;-&gt; 25, 1736
+        ///33 &lt; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day12bis {
+            get {
+                return ResourceManager.GetString("Day12bis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3458	3471	163	1299	170	4200	2425	167	3636	4001	4162	115	2859	130	4075	4269
         ///2777	2712	120	2569	2530	3035	1818	32	491	872	113	92	2526	477	138	1360
         ///2316	35	168	174	1404	1437	2631	1863	1127	640	1745	171	2391	2587	214	193
