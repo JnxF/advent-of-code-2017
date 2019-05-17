@@ -23,5 +23,12 @@ namespace AdventOfCode2017Tests
             Assert.Equal("51139", _.FirstPart());
             Assert.Equal("272", _.SecondPart());
         }
+
+        [Fact]
+        public void Day3()
+        {
+            var _ = new Day3(289326);
+            Assert.Equal("419", _.FirstPart());
+        }
     }
 }

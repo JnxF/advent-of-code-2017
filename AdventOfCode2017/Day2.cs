@@ -7,12 +7,12 @@ namespace AdventOfCode2017
 {
     public class Day2 : ISolver
     {
-        public static void Main(string[] args)
+      /*  public static void Main(string[] args)
         {
             var _ = new Day2();
             Console.WriteLine(_.FirstPart());
             Console.WriteLine(_.SecondPart());
-        }
+        } */
 
         IEnumerable<IEnumerable<int>> Input()
         {
