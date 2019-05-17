@@ -11,12 +11,12 @@ namespace AdventOfCode2017
             this.input = input;
         }
 
-        public static void Main()
+        /* public static void Main()
         {
             var _ = new Day3(289326);
             Console.WriteLine(_.FirstPart());
             Console.WriteLine(_.SecondPart());
-        }
+        } */
 
 
         enum Direction

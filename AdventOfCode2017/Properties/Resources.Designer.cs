@@ -83,5 +83,33 @@ namespace AdventOfCode2017.Properties {
                 return ResourceManager.GetString("Day2", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to oaoe rxeq vssdqtu xrk cjv yaoqp loo
+        ///mveua dogbam szydvri hyzk lbega abzqw xwjn wniug kwbre
+        ///npaoy uivpxwd oynpa rcdk uixpvdw
+        ///yserir iikzcm ieuroca iuwcfov rvb giti crdpdcv mxpps
+        ///spyuhgo lucasl ucllsa bymnjig yflbv nxitmlf
+        ///xlxyhwz xla mpye fvjegwg fezlfrt inetrh vhg xpvstx ydhvq
+        ///xgue cvtmh myg ontvvyw ygm oqzrdrw
+        ///srdfsjf dli kccb kauk kauk apa doefc cdffkhh cdffkhh
+        ///msizb elqiov lqn epamk onmnlst baawab ncafwaf jrataml iyzhy svycuec
+        ///wdzqpcn dkgdumv wdzqpcn qxdmwib cjsigi bgcihgh fmua
+        ///kpvbzf kpvbzf sv [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day4 {
+            get {
+                return ResourceManager.GetString("Day4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4	10	4	1	8	4	9	14	5	1	14	15	0	15	3	5.
+        /// </summary>
+        internal static string Day6 {
+            get {
+                return ResourceManager.GetString("Day6", resourceCulture);
+            }
+        }
     }
 }
