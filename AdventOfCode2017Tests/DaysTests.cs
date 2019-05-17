@@ -1,12 +1,9 @@
 using AdventOfCode2017;
-using System;
 using Xunit;
-using System.Linq;
-using System.Reflection;
 
 namespace AdventOfCode2017Tests
 {
-    public class UnitTest1
+    public class DaysTests
     {
         [Fact]
         public void Day1()
@@ -29,6 +26,23 @@ namespace AdventOfCode2017Tests
         {
             var _ = new Day3(289326);
             Assert.Equal("419", _.FirstPart());
+        }
+
+        [Fact]
+        public void Day4()
+        {
+            var _ = new Day4();
+            Assert.Equal("386", _.FirstPart());
+            Assert.Equal("208", _.SecondPart());
+        }
+
+
+        [Fact]
+        public void Day6()
+        {
+            var _ = new Day6();
+            Assert.Equal("12841", _.FirstPart());
+            Assert.Equal("8038", _.SecondPart());
         }
     }
 }
