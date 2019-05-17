@@ -21,13 +21,15 @@ steps:
     version: '3.0.100-preview3-010431' 
   displayName: Install .NET Core 3
 
-- task: VSBuild@1
+- task: DotNetCoreCLI@2
   inputs:
-    solution: '$(solution)'
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: build
+    arguments: /P:SourceLinkCreate=false --configuration $(buildConfiguration)
+  displayName: Build
 
-- task: VSTest@2
+- task: DotNetCoreCLI@2
   inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+    command: test
+    projects: "**/*Tests/*.csproj"
+    arguments: '/P:SourceLinkCreate=false --configuration $(buildConfiguration) --collect "Code coverage"'
+  displayName: Test
