@@ -15,7 +15,8 @@ namespace AdventOfCode2017
 
         IEnumerable<int>[] Input()
         {
-            return Properties.Resources.Day2.Split("\n", StringSplitOptions.RemoveEmptyEntries).Select(t => t.Split("\t", StringSplitOptions.RemoveEmptyEntries).Select(i => int.Parse(i))).ToArray();
+
+            return Properties.Resources.Day2.Trim().Split("\n", StringSplitOptions.RemoveEmptyEntries).Select(t => t.Trim().Split("\t", StringSplitOptions.RemoveEmptyEntries).Select(i => int.Parse(i))).ToArray();
         }
 
         public string FirstPart()
