@@ -14,9 +14,13 @@ namespace AdventOfCode2017
             Console.WriteLine(_.SecondPart());
         }
 
-        IEnumerable<int>[] Input()
+        IEnumerable<IEnumerable<int>> Input()
         {
-           return Regex.Split(Properties.Resources.Day2.Trim(), @"\r?\n|\r").Select(t => Regex.Split(t.Trim(), @"\s+|\t+").Select(i => int.Parse(i))).ToArray();
+            return Regex.Split(Properties.Resources.Day2.Trim(), @"\r?\n|\r")
+            .Where(_ => _.Trim() != "")
+            .Select(line => Regex.Split(line.Trim(), @"\s+|\t+")
+            .Where(_ => _.Trim() != "")
+            .Select(j => int.Parse(j)));
         }
 
         public string FirstPart()
