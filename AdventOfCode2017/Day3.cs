@@ -11,37 +11,28 @@ namespace AdventOfCode2017
             this.input = input;
         }
 
-        /* public static void Main()
-        {
-            var _ = new Day3(289326);
-            Console.WriteLine(_.FirstPart());
-            Console.WriteLine(_.SecondPart());
-        } */
-
-
-        enum Direction
+        private enum Direction
         {
             Up = 0, Left = 1, Down = 2, Right = 3
         }
 
         public string FirstPart()
         {
-            //int closestSquare = (int)Math.Sqrt(input);
-            int sq = (int)Math.Floor((Math.Sqrt(input) - 1) / 2) + 1;
-
             static int Square(int x) => x * x;
-            int s2 = Square(2 * (sq - 1) + 1);
 
-            int rec = input - s2;
-            int arista = 2 * sq + 1;
+            int square = (int)Math.Floor((Math.Sqrt(input) - 1) / 2) + 1;
+            int square2 = Square(2 * (square - 1) + 1);
 
-            int x = sq;
-            int y = sq;
+            int remainder = input - square2;
+            int edge = 2 * square + 1;
+
+            int x = square;
+            int y = square;
 
             var dir = Direction.Up;
 
-            int aristaRestante = arista - 1;
-            while (rec != 0)
+            int aristaRestante = edge - 1;
+            while (remainder != 0)
             {
                 switch (dir)
                 {
@@ -59,10 +50,10 @@ namespace AdventOfCode2017
                         break;
                 }
                 --aristaRestante;
-                --rec;
+                --remainder;
                 if (aristaRestante == 0)
                 {
-                    aristaRestante = arista - 1;
+                    aristaRestante = edge - 1;
                     ++dir;
                 }
             }

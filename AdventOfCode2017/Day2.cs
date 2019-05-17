@@ -7,13 +7,6 @@ namespace AdventOfCode2017
 {
     public class Day2 : ISolver
     {
-      /*  public static void Main(string[] args)
-        {
-            var _ = new Day2();
-            Console.WriteLine(_.FirstPart());
-            Console.WriteLine(_.SecondPart());
-        } */
-
         IEnumerable<IEnumerable<int>> Input()
         {
             return Regex.Split(Properties.Resources.Day2.Trim(), @"\r?\n|\r")
@@ -27,9 +20,9 @@ namespace AdventOfCode2017
         {
             var input = Input();
             var total = 0;
-            foreach (var fila in input)
+            foreach (var row in input)
             {
-                total += fila.Max() - fila.Min();
+                total += row.Max() - row.Min();
             }
             return total.ToString();
         }
@@ -38,23 +31,23 @@ namespace AdventOfCode2017
         {
             var input = Input();
             var total = 0;
-            foreach (var fila in input)
+            foreach (var row in input)
             {
-                var divis = Divis(fila.ToArray());
+                var divis = DivisionOfDivisibleNumbers(row.ToArray());
                 total += divis;
             }
             return total.ToString();
         }
 
-        private int Divis(int[] v)
+        private int DivisionOfDivisibleNumbers(int[] row)
         {
-            int n = v.Length;
+            int n = row.Length;
             for (int i = 0; i < n; ++i)
             {
                 for (int j = i + 1; j < n; ++j)
                 {
-                    if (v[i] % v[j] == 0) return v[i] / v[j];
-                    if (v[j] % v[i] == 0) return v[j]/v[i];
+                    if (row[i] % row[j] == 0) return row[i] / row[j];
+                    if (row[j] % row[i] == 0) return row[j]/row[i];
                 }
             }
             return default;

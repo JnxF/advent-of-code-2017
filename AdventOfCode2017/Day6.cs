@@ -9,12 +9,10 @@ namespace AdventOfCode2017
     {
         public static void Main()
         {
-            var _ = new Day6();
-            Console.WriteLine(_.FirstPart());
-            Console.WriteLine(_.SecondPart());
+            Console.WriteLine();
         }
 
-        int[] Input()
+        private int[] Input()
         {
             return Properties.Resources.Day6
                 .Split("\t", StringSplitOptions.RemoveEmptyEntries)
@@ -22,13 +20,11 @@ namespace AdventOfCode2017
                 .ToArray();
         }
 
-
-
         public string FirstPart()
         {
             var history = new HashSet<string>();
 
-            static string converter(int[] a) => String.Join(",", a.Select(p => p.ToString()).ToArray());
+            static string converter(int[] a) => string.Join(",", a.Select(p => p.ToString()).ToArray());
 
             var input = Input();
             history.Add(converter(input));
@@ -59,7 +55,7 @@ namespace AdventOfCode2017
             return input;
         }
 
-        int ArgMax(int[] input)
+        private int ArgMax(int[] input)
         {
             var myMax = input[0];
             var myMaxI = 0;
@@ -78,7 +74,7 @@ namespace AdventOfCode2017
         {
             var history = new Dictionary<string, int>();
 
-            static string converter(int[] a) => String.Join(",", a.Select(p => p.ToString()).ToArray());
+            static string converter(int[] a) => string.Join(",", a.Select(p => p.ToString()).ToArray());
 
             var input = Input();
             history[converter(input)] = 0;

@@ -7,24 +7,11 @@ namespace AdventOfCode2017
 {
     public class Day4 : ISolver
     {
-
-        /*public static void Main()
-        {
-            var _ = new Day4();
-            Console.WriteLine(_.FirstPart());
-            Console.WriteLine(_.SecondPart());
-        }*/
-
-        IEnumerable<IEnumerable<string>> Input()
+        private IEnumerable<IEnumerable<string>> Input()
         {
             return Regex.Split(Properties.Resources.Day4.Trim(), @"\r?\n|\r")
             .Where(_ => _.Trim() != "")
             .Select(line => Regex.Split(line.Trim(), @"\s+|\t+"));
-        }
-
-        public string FirstPart()
-        {
-            return Input().Where(l => ValidLineFirstPart(l)).Count().ToString();
         }
 
         private bool ValidLineFirstPart(IEnumerable<string> line)
@@ -41,9 +28,12 @@ namespace AdventOfCode2017
             return true;
         }
 
-        public string SecondPart()
+        public string FirstPart()
         {
-            return Input().Where(l => ValidLineSecondPart(l)).Count().ToString();
+            return Input()
+                .Where(l => ValidLineFirstPart(l))
+                .Count()
+                .ToString();
         }
 
         private bool ValidLineSecondPart(IEnumerable<string> line)
@@ -62,6 +52,14 @@ namespace AdventOfCode2017
                 mySet.Add(myWord);
             }
             return true;
+        }
+
+        public string SecondPart()
+        {
+            return Input()
+                .Where(l => ValidLineSecondPart(l))
+                .Count()
+                .ToString();
         }
     }
 }
