@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace AdventOfCode2017
 {
@@ -15,8 +16,7 @@ namespace AdventOfCode2017
 
         IEnumerable<int>[] Input()
         {
-
-            return Properties.Resources.Day2.Trim().Split("\n", StringSplitOptions.RemoveEmptyEntries).Select(t => t.Trim().Split("\t", StringSplitOptions.RemoveEmptyEntries).Select(i => int.Parse(i))).ToArray();
+           return Regex.Split(Properties.Resources.Day2.Trim(), @"\r?\n|\r").Select(t => Regex.Split(t.Trim(), @"\s+|\t+").Select(i => int.Parse(i))).ToArray();
         }
 
         public string FirstPart()
