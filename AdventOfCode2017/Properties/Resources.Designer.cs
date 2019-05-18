@@ -154,6 +154,15 @@ namespace AdventOfCode2017.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to x15/10,ph/c,x3/14,s1,pf/b,x12/0,ph/m,x14/11,s4,x6/13,s2,x7/14,pn/f,x1/9,s7,x14/11,s9,x15/6,s14,x0/5,s1,x6/7,pp/i,s8,x4/3,s5,x15/6,s3,x4/3,s13,x11/6,pf/m,x13/5,s9,x0/3,s13,x15/5,pl/h,s1,x9/0,pf/a,x12/4,s5,x15/10,pn/i,x9/14,pm/l,x10/6,s8,x14/5,s6,x9/11,s2,x8/0,s6,x7/14,s2,x10/15,s1,x11/13,pf/b,x12/8,s8,pd/j,x1/13,s9,x3/6,s13,x2/8,s9,pp/e,x6/14,pm/b,x13/12,s6,x10/4,s10,x5/1,pi/a,x9/15,s8,x10/11,ph/j,x7/3,s9,x4/2,pb/g,x14/13,s10,x8/11,s11,x6/14,s10,x4/7,s6,x13/1,pn/k,s12,x9/7,pl/e,x2/13,s9,x10/9,po/c,x7/2,s4,x3 [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day16 {
+            get {
+                return ResourceManager.GetString("Day16", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3458	3471	163	1299	170	4200	2425	167	3636	4001	4162	115	2859	130	4075	4269
         ///2777	2712	120	2569	2530	3035	1818	32	491	872	113	92	2526	477	138	1360
         ///2316	35	168	174	1404	1437	2631	1863	1127	640	1745	171	2391	2587	214	193
