@@ -16,13 +16,6 @@ namespace AdventOfCode2017
             input = Properties.Resources.Day9;
         }
 
-        public static void Main()
-        {
-            var k = new Day9(Properties.Resources.Day9);
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
-
         public int FirstPart()
         {
             int height = 0;
