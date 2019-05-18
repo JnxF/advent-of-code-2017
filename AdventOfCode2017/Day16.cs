@@ -7,15 +7,6 @@ namespace AdventOfCode2017
 {
     public class Day16 : ISolverString
     {
-
-        public static void Main()
-        {
-            var k = new Day16();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
-
-
         public readonly string input;
 
         public Day16(string input)

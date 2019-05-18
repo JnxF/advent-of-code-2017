@@ -154,6 +154,57 @@ namespace AdventOfCode2017.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 0: 3
+        ///1: 2
+        ///2: 4
+        ///4: 4
+        ///6: 5
+        ///8: 8
+        ///10: 6
+        ///12: 6
+        ///14: 6
+        ///16: 6
+        ///18: 8
+        ///20: 8
+        ///22: 12
+        ///24: 10
+        ///26: 9
+        ///28: 8
+        ///30: 8
+        ///32: 12
+        ///34: 12
+        ///36: 12
+        ///38: 12
+        ///40: 8
+        ///42: 12
+        ///44: 14
+        ///46: 14
+        ///48: 10
+        ///50: 12
+        ///52: 12
+        ///54: 14
+        ///56: 14
+        ///58: 14
+        ///62: 12
+        ///64: 14
+        ///66: 14
+        ///68: 14
+        ///70: 12
+        ///74: 14
+        ///76: 14
+        ///78: 14
+        ///80: 18
+        ///82: 17
+        ///84: 30
+        ///88: 14.
+        /// </summary>
+        internal static string Day13 {
+            get {
+                return ResourceManager.GetString("Day13", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to x15/10,ph/c,x3/14,s1,pf/b,x12/0,ph/m,x14/11,s4,x6/13,s2,x7/14,pn/f,x1/9,s7,x14/11,s9,x15/6,s14,x0/5,s1,x6/7,pp/i,s8,x4/3,s5,x15/6,s3,x4/3,s13,x11/6,pf/m,x13/5,s9,x0/3,s13,x15/5,pl/h,s1,x9/0,pf/a,x12/4,s5,x15/10,pn/i,x9/14,pm/l,x10/6,s8,x14/5,s6,x9/11,s2,x8/0,s6,x7/14,s2,x10/15,s1,x11/13,pf/b,x12/8,s8,pd/j,x1/13,s9,x3/6,s13,x2/8,s9,pp/e,x6/14,pm/b,x13/12,s6,x10/4,s10,x5/1,pi/a,x9/15,s8,x10/11,ph/j,x7/3,s9,x4/2,pb/g,x14/13,s10,x8/11,s11,x6/14,s10,x4/7,s6,x13/1,pn/k,s12,x9/7,pl/e,x2/13,s9,x10/9,po/c,x7/2,s4,x3 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Day16 {
