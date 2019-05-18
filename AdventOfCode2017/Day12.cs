@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode2017
 {
-    public class Day12 : ISolver
+    public class Day12 : ISolver<int>
     {
         public readonly string input;
 

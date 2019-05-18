@@ -2,7 +2,7 @@
 
 namespace AdventOfCode2017
 {
-    public class Day9 : ISolver
+    public class Day9 : ISolver<int>
     {
         public readonly string input;
 

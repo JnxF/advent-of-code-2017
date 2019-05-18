@@ -4,9 +4,9 @@ using System.Text;
 
 namespace AdventOfCode2017
 {
-    interface ISolver
+    interface ISolver<T>
     {
-        int FirstPart();
-        int SecondPart();
+        T FirstPart();
+        T SecondPart();
     }
 }

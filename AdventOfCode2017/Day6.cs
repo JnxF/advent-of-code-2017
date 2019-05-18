@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AdventOfCode2017
 {
-    public class Day6 : ISolver
+    public class Day6 : ISolver<int>
     {
 
         public readonly string input;
