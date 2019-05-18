@@ -4,7 +4,7 @@ namespace AdventOfCode2017
 {
     public class Day3 : ISolver
     {
-        readonly int input;
+        public readonly int input;
 
         public Day3(int input)
         {
@@ -16,8 +16,10 @@ namespace AdventOfCode2017
             Up = 0, Left = 1, Down = 2, Right = 3
         }
 
-        public string FirstPart()
+        public int FirstPart()
         {
+            if (input == 1) return 0;
+
             static int Square(int x) => x * x;
 
             int square = (int)Math.Floor((Math.Sqrt(input) - 1) / 2) + 1;
@@ -58,10 +60,10 @@ namespace AdventOfCode2017
                 }
             }
 
-            return (Math.Abs(x) + Math.Abs(y)).ToString();
+            return (Math.Abs(x) + Math.Abs(y));
         }
 
-        public string SecondPart()
+        public int SecondPart()
         {
             throw new NotImplementedException();
         }

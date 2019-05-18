@@ -7,16 +7,27 @@ namespace AdventOfCode2017
 {
     public class Day5 : ISolver
     {
-     
+
+        public readonly string input;
+
+        public Day5(string input)
+        {
+            this.input = input;
+        }
+
+        public Day5()
+        {
+            input = Properties.Resources.Day5;
+        }
 
         private int[] Input()
         {
-            return Properties.Resources.Day5
+            return input
                 .Split("\n", StringSplitOptions.RemoveEmptyEntries)
                 .Select(i => int.Parse(i))
                 .ToArray();
         }
-        public string FirstPart()
+        public int FirstPart()
         {
             int pointer = 0;
             var input = Input();
@@ -27,10 +38,10 @@ namespace AdventOfCode2017
                 ++input[pointer];
                 pointer += input[pointer] - 1;
             }
-            return counter.ToString();
+            return counter;
         }
 
-        public string SecondPart()
+        public int SecondPart()
         {
             int pointer = 0;
             var input = Input();
@@ -50,7 +61,7 @@ namespace AdventOfCode2017
 
                 pointer += previous;
             }
-            return counter.ToString();
+            return counter;
         }
     }
 }

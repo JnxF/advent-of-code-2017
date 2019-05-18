@@ -8,6 +8,18 @@ namespace AdventOfCode2017
 {
     public class Day8 : ISolver
     {
+        public readonly string input;
+
+        public Day8(string input)
+        {
+            this.input = input;
+        }
+
+        public Day8()
+        {
+            input = Properties.Resources.Day8;
+        }
+
         private class Instruction
         {
             public readonly string register;
@@ -30,7 +42,7 @@ namespace AdventOfCode2017
 
         Instruction[] Input()
         {
-            return Regex.Split(Properties.Resources.Day8.Trim(), @"\r?\n|\r")
+            return Regex.Split(input.Trim(), @"\r?\n|\r")
                 .Where(_ => _.Trim() != "")
                 .Select(line =>
                 {
@@ -75,20 +87,20 @@ namespace AdventOfCode2017
             }
         }
 
-        public string FirstPart()
+        public int FirstPart()
         {
             var instructions = Input();
             Dictionary<string, int> registerBank = new Dictionary<string, int>();
             RunCode(instructions, registerBank, out _);
-            return registerBank.Values.Max().ToString();
+            return registerBank.Values.Max();
         }
 
-        public string SecondPart()
+        public int SecondPart()
         {
             var instructions = Input();
             Dictionary<string, int> registerBank = new Dictionary<string, int>();
             RunCode(instructions, registerBank, out int maxValue);
-            return maxValue.ToString();
+            return maxValue;
         }
     }
 }

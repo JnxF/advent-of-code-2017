@@ -8,11 +8,21 @@ namespace AdventOfCode2017
 {
     public class Day12 : ISolver
     {
+        public readonly string input;
+
+        public Day12(string input)
+        {
+            this.input = input;
+        }
+
+        public Day12()
+        {
+            input = Properties.Resources.Day12;
+        }
+
         bool[,] ReadMatrix()
         {
-            var rawInput = Properties.Resources.Day12bis;
-
-            var lines = Regex.Split(rawInput.Trim(), @"\r?\n|\r")
+            var lines = Regex.Split(input.Trim(), @"\r?\n|\r")
                 .Select(i => i.Split("<->")[1])
                 .Select(line => line.Split(", ", StringSplitOptions.RemoveEmptyEntries).Select(i => int.Parse(i)).ToArray())
                 .ToArray();
@@ -31,10 +41,10 @@ namespace AdventOfCode2017
             return m;
         }
 
-        public string FirstPart()
+        public int FirstPart()
         {
             var m = ReadMatrix();
-            return DFS(m).ToString();
+            return DFS(m);
         }
 
         private int DFS(bool[,] m)
@@ -62,7 +72,7 @@ namespace AdventOfCode2017
             return accessed.Count;
         }
 
-        public string SecondPart()
+        public int SecondPart()
         {
             var m = ReadMatrix();
             int n = m.GetLength(0);
@@ -77,7 +87,7 @@ namespace AdventOfCode2017
                     }
                 }
             }
-            return uf.Count.ToString();
+            return uf.Count;
         }
     }
 }

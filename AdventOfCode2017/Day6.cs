@@ -8,15 +8,26 @@ namespace AdventOfCode2017
     public class Day6 : ISolver
     {
 
+        public readonly string input;
+
+        public Day6(string input)
+        {
+            this.input = input;
+        }
+
+        public Day6()
+        {
+            input = Properties.Resources.Day6;
+        }
         private int[] Input()
         {
-            return Properties.Resources.Day6
+            return input
                 .Split("\t", StringSplitOptions.RemoveEmptyEntries)
                 .Select(n => int.Parse(n))
                 .ToArray();
         }
 
-        public string FirstPart()
+        public int FirstPart()
         {
             var history = new HashSet<string>();
 
@@ -30,7 +41,7 @@ namespace AdventOfCode2017
                 input = Iterate(input);
                 if (history.Contains(converter(input)))
                 {
-                    return (i+1).ToString();
+                    return i + 1;
                 }
                 history.Add(converter(input));
             }
@@ -66,7 +77,7 @@ namespace AdventOfCode2017
             return myMaxI;
         }
 
-        public string SecondPart()
+        public int SecondPart()
         {
             var history = new Dictionary<string, int>();
 
@@ -80,7 +91,7 @@ namespace AdventOfCode2017
                 input = Iterate(input);
                 if (history.Keys.Contains(converter(input)))
                 {
-                    return (i - history[converter(input)]).ToString();
+                    return i - history[converter(input)];
                 }
                 history[converter(input)] = i;
             }

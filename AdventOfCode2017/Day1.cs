@@ -4,34 +4,44 @@ namespace AdventOfCode2017
 {
     public class Day1 : ISolver
     {
-        public string FirstPart()
+        public readonly string input;
+
+        public Day1(string input)
         {
-            var number = Properties.Resources.Day1;
-            int total = 0;
-            for (int i = 0; i < number.Length; ++i)
-            {
-                var next = number[(i + 1) % number.Length];
-                if (number[i] == next)
-                {
-                    total += int.Parse(number[i] + " ");
-                }
-            }
-            return total.ToString();
+            this.input = input;
         }
 
-        public string SecondPart()
+        public Day1()
         {
-            var number = Properties.Resources.Day1;
+            input = Properties.Resources.Day1;
+        }
+
+        public int FirstPart()
+        {
             int total = 0;
-            for (int i = 0; i < number.Length; ++i)
+            for (int i = 0; i < input.Length; ++i)
             {
-                var next = number[(i + (number.Length / 2)) % number.Length];
-                if (number[i] == next)
+                var next = input[(i + 1) % input.Length];
+                if (input[i] == next)
                 {
-                    total += int.Parse(number[i] + " ");
+                    total += int.Parse(input[i] + " ");
                 }
             }
-            return total.ToString();
+            return total;
+        }
+
+        public int SecondPart()
+        {
+            int total = 0;
+            for (int i = 0; i < input.Length; ++i)
+            {
+                var next = input[(i + (input.Length / 2)) % input.Length];
+                if (input[i] == next)
+                {
+                    total += int.Parse(input[i] + " ");
+                }
+            }
+            return total;
         }
     }
 }

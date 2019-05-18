@@ -6,7 +6,7 @@ namespace AdventOfCode2017
 {
     public interface ISolver
     {
-        string FirstPart();
-        string SecondPart();
+        int FirstPart();
+        int SecondPart();
     }
 }

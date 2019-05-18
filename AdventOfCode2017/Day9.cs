@@ -23,7 +23,7 @@ namespace AdventOfCode2017
             Console.WriteLine(k.SecondPart());
         }
 
-        public string FirstPart()
+        public int FirstPart()
         {
             int height = 0;
             int total = 0;
@@ -55,10 +55,10 @@ namespace AdventOfCode2017
                     else if (c == '<') inRubish = true;
                 }
             }
-            return total.ToString();
+            return total;
         }
 
-        public string SecondPart()
+        public int SecondPart()
         {
             bool inRubish = false;
             bool exclamationDetected = false;
@@ -84,7 +84,7 @@ namespace AdventOfCode2017
                     inRubish = true;
             }
 
-            return totalRubish.ToString();
+            return totalRubish;
         }
     }
 }
