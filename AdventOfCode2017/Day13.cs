@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode2017
 {
-    public class Day13 : ISolver
+    public class Day13 : ISolver<int>
     {
         public readonly string input;
 
@@ -47,7 +47,7 @@ namespace AdventOfCode2017
             foreach ((var depth, var range) in input)
             {
                 int frequency = 2 * (range - 1);
-                if (frequency == 0 || depth % frequency == 0)
+                if (depth % frequency == 0)
                 {
                     total += depth * range;
                 }
@@ -56,30 +56,22 @@ namespace AdventOfCode2017
             return total;
         }
         
-        private bool CanPass(IDictionary<int, int> myInput)
-        {
-            foreach (var (depth, range) in myInput)
-            {
-                int frequency = 2 * (range - 1);
-                if (frequency == 0 || depth % frequency == 0)
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-
         public int SecondPart()
         {
             var input = Input();
             for (int iteration = 0; ; ++iteration)
             {
-                var dictionary = new Dictionary<int, int>();
-                foreach (var (key, value) in input)
+                bool ok = true;
+                foreach (var (depth, range) in input)
                 {
-                    dictionary[key + iteration] = value;
+                    int frequency = 2 * (range - 1);
+                    if ((depth + iteration) % frequency == 0)
+                    {
+                        ok = false;
+                        break;
+                    }
                 }
-                if (CanPass(dictionary))
+                if (ok)
                 {
                     return iteration;
                 }
