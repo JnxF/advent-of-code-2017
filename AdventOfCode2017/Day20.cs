@@ -100,7 +100,6 @@ namespace AdventOfCode2017
             return tMin;
         }
 
-
         private bool[] FindValidParticles(int n, ref Dictionary<(int,int), int?> calculatedTimes, int? tMin)
         {
             bool[] validParticles = new bool[n];
