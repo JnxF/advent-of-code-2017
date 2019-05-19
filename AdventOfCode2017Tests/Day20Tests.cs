@@ -64,9 +64,9 @@ p=<3,0,0>, v=<-1,0,0>, a=<0,0,0>";
         [Fact]
         public void Day20_CollisionParticlesMoment_Test1()
         {
-            var p1 = new Day20.Particle { p1 = -6, p2 = 0, p3 = 0, v1 = 3, v2 = 0, v3 = 0, a1 = 0, a2 = 0, a3 = 0, };
-            var p2 = new Day20.Particle { p1 = -4, p2 = 0, p3 = 0, v1 = 2, v2 = 0, v3 = 0, a1 = 0, a2 = 0, a3 = 0, };
-            var p3 = new Day20.Particle { p1 = -2, p2 = 0, p3 = 0, v1 = 1, v2 = 0, v3 = 0, a1 = 0, a2 = 0, a3 = 0, };
+            var p1 = new Day20.Particle { P1 = -6, P2 = 0, P3 = 0, V1 = 3, V2 = 0, V3 = 0, A1 = 0, A2 = 0, A3 = 0, };
+            var p2 = new Day20.Particle { P1 = -4, P2 = 0, P3 = 0, V1 = 2, V2 = 0, V3 = 0, A1 = 0, A2 = 0, A3 = 0, };
+            var p3 = new Day20.Particle { P1 = -2, P2 = 0, P3 = 0, V1 = 1, V2 = 0, V3 = 0, A1 = 0, A2 = 0, A3 = 0, };
             Assert.Equal(2, AdventOfCode2017.Day20.CollisionParticlesMoment(p1, p2));
             Assert.Equal(2, AdventOfCode2017.Day20.CollisionParticlesMoment(p1, p3));
             Assert.Equal(2, AdventOfCode2017.Day20.CollisionParticlesMoment(p2, p3));
@@ -75,16 +75,16 @@ p=<3,0,0>, v=<-1,0,0>, a=<0,0,0>";
         [Fact]
         public void Day20_CollisionParticlesMoment_Test2()
         {
-            var p1 = new Day20.Particle { p1 = 1, p2 = 0, p3 = 0, v1 = 1, v2 = 0, v3 = 0, a1 = 1, a2 = 0, a3 = 0, };
-            var p2 = new Day20.Particle { p1 = -1, p2 = 0, p3 = 0, v1 = -1, v2 = 0, v3 = 0, a1 = -1, a2 = -2, a3 = 0, };
+            var p1 = new Day20.Particle { P1 = 1, P2 = 0, P3 = 0, V1 = 1, V2 = 0, V3 = 0, A1 = 1, A2 = 0, A3 = 0, };
+            var p2 = new Day20.Particle { P1 = -1, P2 = 0, P3 = 0, V1 = -1, V2 = 0, V3 = 0, A1 = -1, A2 = -2, A3 = 0, };
             Assert.Null(AdventOfCode2017.Day20.CollisionParticlesMoment(p1, p2));
         }
 
         [Fact]
         public void Day20_CollisionParticlesMoment_Test3()
         {
-            var p1 = new Day20.Particle { p1 = 3, p2 = 0, p3 = 0, v1 = 0, v2 = 0, v3 = 0, a1 = -1, a2 = 0, a3 = 0 };
-            var p2 = new Day20.Particle { p1 = 0, p2 = 3, p3 = 0, v1 = 0, v2 = 0, v3 = 0, a1 = 0, a2 = -1, a3 = 0 };
+            var p1 = new Day20.Particle { P1 = 3, P2 = 0, P3 = 0, V1 = 0, V2 = 0, V3 = 0, A1 = -1, A2 = 0, A3 = 0 };
+            var p2 = new Day20.Particle { P1 = 0, P2 = 3, P3 = 0, V1 = 0, V2 = 0, V3 = 0, A1 = 0, A2 = -1, A3 = 0 };
             Assert.Equal(2, AdventOfCode2017.Day20.CollisionParticlesMoment(p1, p2));
         }
     }

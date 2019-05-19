@@ -29,21 +29,21 @@ namespace AdventOfCode2017
 
         public class Particle
         {
-            public int p1 { get; set; }
-            public int p2 { get; set; }
-            public int p3 { get; set; }
-            public int v1 { get; set; }
-            public int v2 { get; set; }
-            public int v3 { get; set; }
-            public int a1 { get; set; }
-            public int a2 { get; set; }
-            public int a3 { get; set; }
+            public int P1 { get; set; }
+            public int P2 { get; set; }
+            public int P3 { get; set; }
+            public int V1 { get; set; }
+            public int V2 { get; set; }
+            public int V3 { get; set; }
+            public int A1 { get; set; }
+            public int A2 { get; set; }
+            public int A3 { get; set; }
 
-            public int A(int i) => i == 1 ? a1 : i == 2 ? a2 : a3;
+            public int A(int i) => i == 1 ? A1 : i == 2 ? A2 : A3;
 
-            public int V(int i) => i == 1 ? v1 : i == 2 ? v2 : v3;
+            public int V(int i) => i == 1 ? V1 : i == 2 ? V2 : V3;
 
-            public int P(int i) => i == 1 ? p1 : i == 2 ? p2 : p3;
+            public int P(int i) => i == 1 ? P1 : i == 2 ? P2 : P3;
         }
 
         private Particle[] Input()
@@ -61,15 +61,15 @@ namespace AdventOfCode2017
 
             return new Particle
             {
-                p1 = int.Parse(matches[0].Groups[1].Value),
-                p2 = int.Parse(matches[0].Groups[2].Value),
-                p3 = int.Parse(matches[0].Groups[3].Value),
-                v1 = int.Parse(matches[0].Groups[4].Value),
-                v2 = int.Parse(matches[0].Groups[5].Value),
-                v3 = int.Parse(matches[0].Groups[6].Value),
-                a1 = int.Parse(matches[0].Groups[7].Value),
-                a2 = int.Parse(matches[0].Groups[8].Value),
-                a3 = int.Parse(matches[0].Groups[9].Value),
+                P1 = int.Parse(matches[0].Groups[1].Value),
+                P2 = int.Parse(matches[0].Groups[2].Value),
+                P3 = int.Parse(matches[0].Groups[3].Value),
+                V1 = int.Parse(matches[0].Groups[4].Value),
+                V2 = int.Parse(matches[0].Groups[5].Value),
+                V3 = int.Parse(matches[0].Groups[6].Value),
+                A1 = int.Parse(matches[0].Groups[7].Value),
+                A2 = int.Parse(matches[0].Groups[8].Value),
+                A3 = int.Parse(matches[0].Groups[9].Value),
             };
         }
 
@@ -77,12 +77,55 @@ namespace AdventOfCode2017
         {
             var input = Input();
             var pairedInput = input.Zip(Enumerable.Range(0, input.Length), (part, index) => (index, part));
-            return pairedInput.OrderBy(p => Math.Abs(p.part.a1) + Math.Abs(p.part.a2) + Math.Abs(p.part.a3))
-                .ThenBy(p => Math.Abs(p.part.v1) + Math.Abs(p.part.v2) + Math.Abs(p.part.v3))
-                .ThenBy(p => Math.Abs(p.part.p1) + Math.Abs(p.part.p2) + Math.Abs(p.part.p3))
+            return pairedInput.OrderBy(p => Math.Abs(p.part.A1) + Math.Abs(p.part.A2) + Math.Abs(p.part.A3))
+                .ThenBy(p => Math.Abs(p.part.V1) + Math.Abs(p.part.V2) + Math.Abs(p.part.V3))
+                .ThenBy(p => Math.Abs(p.part.P1) + Math.Abs(p.part.P2) + Math.Abs(p.part.P3))
                 .First().index;
         }
 
+        private int? CalculateCollisionTimes(ref Particle[] particles, out Dictionary<(int, int), int?> calculatedTimes)
+        {
+            int n = particles.Length;
+            bool[] validParticles = new bool[n];
+            for (int i = 0; i < n; ++i) validParticles[i] = true;
+
+            calculatedTimes = new Dictionary<(int, int), int?>();
+
+            int? tMin = null;
+            for (int i = 0; i < n; ++i)
+            {
+                for (int j = i + 1; j < n; ++j)
+                {
+                    int? t = CollisionParticlesMoment(particles[i], particles[j]);
+                    calculatedTimes[(i, j)] = t;
+                    if (tMin == null || (t != null && t < tMin))
+                    {
+                        tMin = t;
+                    }
+                }
+            }
+            return tMin;
+        }
+
+
+        private bool[] FindValidParticles(int n, ref Dictionary<(int,int), int?> calculatedTimes, int? tMin)
+        {
+            bool[] validParticles = new bool[n];
+            for (int i = 0; i < n; ++i) validParticles[i] = true;
+            for (int i = 0; i < n; ++i)
+            {
+                for (int j = i + 1; j < n; ++j)
+                {
+                    int? t = calculatedTimes[(i, j)];
+                    if (t != null && t == tMin)
+                    {
+                        validParticles[i] = false;
+                        validParticles[j] = false;
+                    }
+                }
+            }
+            return validParticles;
+        }
 
         public int SecondPart()
         {
@@ -91,38 +134,10 @@ namespace AdventOfCode2017
             for (int iteration = 0; iteration < 900; ++iteration)
             {
                 int n = particles.Length;
-                bool[] validParticles = new bool[n];
-                for (int i = 0; i < n; ++i) validParticles[i] = true;
+                int? tMin = CalculateCollisionTimes(ref particles, out var calculatedTimes);
+                bool[] validParticles = FindValidParticles(n, ref calculatedTimes, tMin);
 
-                var calculatedTime = new Dictionary<(int, int), int?>();
-
-                int? tMin = null;
-                for (int i = 0; i < n; ++i)
-                {
-                    for (int j = i + 1; j < n; ++j)
-                    {
-                        int? t = CollisionParticlesMoment(particles[i], particles[j]);
-                        calculatedTime[(i, j)] = t;
-                        if (tMin == null || (t != null && t < tMin))
-                        {
-                            tMin = t;
-                        }
-                    }
-                }
-
-                for (int i = 0; i < n; ++i)
-                {
-                    for (int j = i + 1; j < n; ++j)
-                    {
-                        int? t = calculatedTime[(i, j)];
-                        if (t != null && t == tMin)
-                        {
-                            validParticles[i] = false;
-                            validParticles[j] = false;
-                        }
-                    }
-                }
-
+                // Recalculate particles
                 HashSet<Particle> survivals = new HashSet<Particle>();
                 for (int i = 0; i < n; ++i)
                 {
@@ -147,21 +162,15 @@ namespace AdventOfCode2017
 
             var sol1 = (-b + sqr) / (2 * a);
             var sol2 = (-b - sqr) / (2 * a);
-            int? sol1Rounded = null;
-            int? sol2Rounded = null;
+            int? sol1Rounded = null, sol2Rounded = null;
 
             if (Math.Abs(sol1 - Math.Round(sol1)) < 0.0001 && sol1 >= 0)
-            {
                 sol1Rounded = Convert.ToInt32(Math.Round(sol1));
-            }
 
             if (Math.Abs(sol2 - Math.Round(sol2)) < 0.0001 && sol2 >= 0)
-            {
                 sol2Rounded = Convert.ToInt32(Math.Round(sol2));
-            }
 
-            int? hueco1 = null;
-            int? hueco2 = null;
+            int? hueco1 = null, hueco2 = null;
             if (sol2Rounded != null && sol2Rounded >= 0) hueco1 = sol2Rounded;
             if (sol1Rounded != null && sol1Rounded >= 0) hueco2 = sol1Rounded;
             if (hueco1 == null) { hueco1 = hueco2; hueco2 = null; }
@@ -174,9 +183,8 @@ namespace AdventOfCode2017
             double sol = -c / b;
 
             if (Math.Abs(sol - Math.Round(sol)) < 0.0001 && sol >= 0)
-            {
                 return (Convert.ToInt32(Math.Round(sol)), false);
-            }
+
             return (null, false);
         }
 
@@ -218,14 +226,7 @@ namespace AdventOfCode2017
             if (!y_inf) resSet.IntersectWith(y);
             if (!z_inf) resSet.IntersectWith(z);
 
-            if (resSet.Any())
-            {
-                return resSet.Min();
-            }
-            else
-            {
-                return null;
-            }
+            return resSet.Any() ? new int?(resSet.Min()) : null;
         }
     }
 }
