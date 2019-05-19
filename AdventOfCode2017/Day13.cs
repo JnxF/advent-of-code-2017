@@ -32,12 +32,6 @@ namespace AdventOfCode2017
             return res;
         }
 
-        public static void Main()
-        {
-            var k = new Day13();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
 
         public int FirstPart()
         {
