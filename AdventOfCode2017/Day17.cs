@@ -18,14 +18,6 @@ namespace AdventOfCode2017
             input = 386;
         }
 
-        public static void Main()
-        {
-            var k = new Day17();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
-
-
         public int FirstPart()
         {
             List<int> list = new List<int> { 0 };
