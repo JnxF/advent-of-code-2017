@@ -2132,6 +2132,9 @@
   <data name="Day16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Day16.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
+  <data name="Day19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Day19.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="Day2" xml:space="preserve">
     <value>3458	3471	163	1299	170	4200	2425	167	3636	4001	4162	115	2859	130	4075	4269
 2777	2712	120	2569	2530	3035	1818	32	491	872	113	92	2526	477	138	1360
@@ -2149,6 +2152,9 @@
 710	3784	83	2087	2582	3941	97	1412	2859	117	3880	411	102	3691	4366	4104
 3178	219	253	1297	3661	1552	8248	678	245	7042	260	581	7350	431	8281	8117
 837	80	95	281	652	822	1028	1295	101	1140	88	452	85	444	649	1247</value>
+  </data>
+  <data name="Day20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Day20.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="Day4" xml:space="preserve">
     <value>oaoe rxeq vssdqtu xrk cjv yaoqp loo

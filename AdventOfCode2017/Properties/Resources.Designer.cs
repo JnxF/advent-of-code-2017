@@ -214,6 +214,17 @@ namespace AdventOfCode2017.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to                                                                              |                                                                                                                           
+        ///             +-------+       +-------+   +-+                                 | +-------------------------------------------+                   +---------------+     +-+ +---------------------------+   
+        ///             |       |       |       |   | |                                 | |                           [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day19 {
+            get {
+                return ResourceManager.GetString("Day19", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 3458	3471	163	1299	170	4200	2425	167	3636	4001	4162	115	2859	130	4075	4269
         ///2777	2712	120	2569	2530	3035	1818	32	491	872	113	92	2526	477	138	1360
         ///2316	35	168	174	1404	1437	2631	1863	1127	640	1745	171	2391	2587	214	193
@@ -225,6 +236,25 @@ namespace AdventOfCode2017.Properties {
         internal static string Day2 {
             get {
                 return ResourceManager.GetString("Day2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to p=&lt;2366,784,-597&gt;, v=&lt;-12,-41,50&gt;, a=&lt;-5,1,-2&gt;
+        ///p=&lt;-2926,-3402,-2809&gt;, v=&lt;-55,65,-16&gt;, a=&lt;11,4,8&gt;
+        ///p=&lt;2290,257,-3040&gt;, v=&lt;41,119,57&gt;, a=&lt;-10,-10,5&gt;
+        ///p=&lt;3090,-493,-1340&gt;, v=&lt;-134,19,-37&gt;, a=&lt;1,0,7&gt;
+        ///p=&lt;-1338,2295,4101&gt;, v=&lt;-158,34,-48&gt;, a=&lt;19,-12,-12&gt;
+        ///p=&lt;-1140,1657,-981&gt;, v=&lt;17,-75,45&gt;, a=&lt;3,0,0&gt;
+        ///p=&lt;1544,40,141&gt;, v=&lt;-59,33,-75&gt;, a=&lt;-1,-3,6&gt;
+        ///p=&lt;3711,-950,-574&gt;, v=&lt;-8,55,61&gt;, a=&lt;-14,-1,-3&gt;
+        ///p=&lt;1643,-235,-1267&gt;, v=&lt;-52,11,35&gt;, a=&lt;-2,0,2&gt;
+        ///p=&lt;2501,-4492,4189&gt;, v=&lt;-68,124,-75&gt;, a=&lt;-4,7,-10&gt;
+        ///p=&lt;-2141,-48,2297&gt; [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day20 {
+            get {
+                return ResourceManager.GetString("Day20", resourceCulture);
             }
         }
         
