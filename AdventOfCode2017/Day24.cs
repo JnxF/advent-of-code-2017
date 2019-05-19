@@ -20,13 +20,6 @@ namespace AdventOfCode2017
             input = Properties.Resources.Day24;
         }
 
-        public static void Main()
-        {
-            var k = new Day24();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
-
         (int, int)[] Input()
         {
             return Regex.Split(input.Trim(), @"\r?\n|\r")
