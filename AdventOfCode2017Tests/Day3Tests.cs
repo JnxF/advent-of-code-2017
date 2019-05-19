@@ -10,6 +10,7 @@ namespace AdventOfCode2017Tests
         {
             var day = new Day3(289326);
             Assert.Equal(419, day.FirstPart());
+            Assert.Equal(289326, day.SecondPart());
         }
 
         [Theory]

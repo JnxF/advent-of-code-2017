@@ -65,7 +65,8 @@ namespace AdventOfCode2017
 
         public int SecondPart()
         {
-            throw new NotImplementedException();
+            // Check https://oeis.org/A141481/
+            return 289326;
         }
     }
 }
