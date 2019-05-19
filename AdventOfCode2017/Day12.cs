@@ -22,7 +22,10 @@ namespace AdventOfCode2017
 
         bool[,] ReadMatrix()
         {
-            var lines = Regex.Split(input.Trim(), @"\r?\n|\r")
+            var lines = input
+                .Replace("\r", "")
+                .Trim()
+                .Split("\n")
                 .Select(i => i.Split("<->")[1])
                 .Select(line => line.Split(", ", StringSplitOptions.RemoveEmptyEntries).Select(i => int.Parse(i)).ToArray())
                 .ToArray();

@@ -24,7 +24,9 @@ namespace AdventOfCode2017
 
         private char[][] Input()
         {
-            return Regex.Split(input, @"\r?\n|\r")
+            return input
+                .Replace("\r", "")
+                .Split("\n")
                 .Select(i => i.ToCharArray())
                 .ToArray();
         }

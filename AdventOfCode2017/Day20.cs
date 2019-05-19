@@ -41,7 +41,8 @@ namespace AdventOfCode2017
 
         private Particle[] Input()
         {
-            return Regex.Split(input, @"\r?\n|\r")
+            return input.Replace("\r", "")
+                .Split("\n")
                 .Where(s => s != "")
                 .Select(ParseLine)
                 .ToArray();

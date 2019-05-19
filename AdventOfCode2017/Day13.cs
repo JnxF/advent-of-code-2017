@@ -23,7 +23,7 @@ namespace AdventOfCode2017
         IDictionary<int, int> Input()
         {
             var res = new Dictionary<int, int>();
-            var lines = Regex.Split(input.Trim(), @"\r?\n|\r");
+            var lines = input.Replace("\r", "").Trim().Split("\n");
             foreach (var line in lines)
             {
                 var splitted = line.Split(": ").Select(i => int.Parse(i)).ToArray();

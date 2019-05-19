@@ -22,7 +22,9 @@ namespace AdventOfCode2017
 
         (int, int)[] Input()
         {
-            return Regex.Split(input.Trim(), @"\r?\n|\r")
+            return input.Replace("\r", "")
+                .Trim()
+                .Split("\n")
                 .Select(i => i.Split("/").Select(n => int.Parse(n)).ToArray())
                 .Select(i => (i[0], i[1]))
                 .ToArray();

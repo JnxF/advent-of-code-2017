@@ -13,7 +13,6 @@ namespace AdventOfCode2017Tests
         {
             var day = new Day25();
             Assert.Equal(4217, day.FirstPart());
-            Assert.Equal(-20, day.SecondPart());
         }
 
         [Fact]
@@ -42,15 +41,6 @@ In state B:
     - Move one slot to the right.
     - Continue with state A.";
             Assert.Equal(3, new Day25(myInput, 6).FirstPart());
-        }
-
-        [Fact]
-        public void Day25_SecondPart()
-        {
-            var myInput = @"..#
-#..
-...";
-            Assert.Equal(-20, new Day25(myInput, -20).SecondPart());
         }
     }
 }

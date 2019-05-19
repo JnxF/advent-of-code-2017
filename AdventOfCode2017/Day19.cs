@@ -25,7 +25,7 @@ namespace AdventOfCode2017
 
         private char[,] Input()
         {
-            var lines = Regex.Split(input, @"\r?\n|\r");
+            var lines = input.Replace("\r", "").Split("\n");
             int n = lines.Length;
             int m = lines[1].Length;
             char[,] res = new char[n, m];

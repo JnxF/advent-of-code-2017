@@ -21,7 +21,9 @@ namespace AdventOfCode2017
 
         private IEnumerable<IEnumerable<string>> Input()
         {
-            return Regex.Split(input.Trim(), @"\r?\n|\r")
+            return input.Replace("\r", "")
+            .Trim()
+            .Split("\n")
             .Where(_ => _.Trim() != "")
             .Select(line => Regex.Split(line.Trim(), @"\s+|\t+"));
         }

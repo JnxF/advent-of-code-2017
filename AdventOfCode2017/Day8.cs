@@ -42,7 +42,9 @@ namespace AdventOfCode2017
 
         Instruction[] Input()
         {
-            return Regex.Split(input.Trim(), @"\r?\n|\r")
+            return input.Replace("\r", "")
+                .Trim()
+                .Split("\n")
                 .Where(_ => _.Trim() != "")
                 .Select(line =>
                 {

@@ -21,7 +21,9 @@ namespace AdventOfCode2017
 
         private (string, string, string)[] Input()
         {
-            return Regex.Split(input.Trim(), @"\r?\n|\r")
+            return input.Replace("\r", "")
+                .Trim()
+                .Split("\n")
                 .Select(i => i.Split(" "))
                 .Select(i => (i[0], i[1], i[2]))
                 .ToArray();
