@@ -70,6 +70,15 @@ namespace AdventOfCode2017.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to s,se,se,se,s,sw,s,s,s,nw,se,sw,sw,sw,sw,nw,sw,nw,sw,nw,nw,nw,nw,nw,n,nw,sw,ne,n,nw,nw,s,n,n,n,n,n,n,se,sw,ne,n,ne,n,s,ne,n,n,ne,ne,ne,n,n,ne,nw,ne,n,ne,s,se,ne,ne,ne,ne,ne,se,ne,se,se,ne,ne,ne,ne,se,ne,se,ne,ne,n,se,se,ne,ne,ne,se,sw,ne,ne,se,se,ne,se,se,se,se,se,s,se,se,ne,se,se,se,se,se,ne,se,s,se,se,se,nw,nw,n,s,se,s,se,se,s,se,se,s,s,se,s,se,s,s,s,s,se,se,nw,ne,s,s,s,s,s,s,sw,s,s,nw,s,s,s,nw,s,s,s,s,s,s,sw,ne,sw,s,sw,nw,s,s,s,n,s,s,s,s,s,sw,s,s,sw,sw,s,nw,ne,sw,s,se,sw,s,s,sw,se,sw,sw,s,sw,sw,s,sw,sw,sw [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day11 {
+            get {
+                return ResourceManager.GetString("Day11", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 0 &lt;-&gt; 396, 1867
         ///1 &lt;-&gt; 1749
         ///2 &lt;-&gt; 466, 675, 1661
