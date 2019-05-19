@@ -400,6 +400,34 @@ namespace AdventOfCode2017.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Begin in state A.
+        ///Perform a diagnostic checksum after 12459852 steps.
+        ///
+        ///In state A:
+        ///  If the current value is 0:
+        ///    - Write the value 1.
+        ///    - Move one slot to the right.
+        ///    - Continue with state B.
+        ///  If the current value is 1:
+        ///    - Write the value 1.
+        ///    - Move one slot to the left.
+        ///    - Continue with state E.
+        ///
+        ///In state B:
+        ///  If the current value is 0:
+        ///    - Write the value 1.
+        ///    - Move one slot to the right.
+        ///    - Continue with state C.
+        ///  If the current value is 1:
+        ///    - Write the va [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day25 {
+            get {
+                return ResourceManager.GetString("Day25", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to oaoe rxeq vssdqtu xrk cjv yaoqp loo
         ///mveua dogbam szydvri hyzk lbega abzqw xwjn wniug kwbre
         ///npaoy uivpxwd oynpa rcdk uixpvdw

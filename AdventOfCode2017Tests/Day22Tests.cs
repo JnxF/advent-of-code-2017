@@ -12,8 +12,8 @@ namespace AdventOfCode2017Tests
         public void Day22()
         {
             var day = new Day22();
-            Assert.Equal(200, day.FirstPart());
-            Assert.Equal(200, day.SecondPart());
+            Assert.Equal(5460, day.FirstPart());
+            Assert.Equal(2511702, day.SecondPart());
         }
 
         [Fact]

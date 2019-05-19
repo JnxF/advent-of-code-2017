@@ -21,12 +21,6 @@ namespace AdventOfCode2017
             input = Properties.Resources.Day22;
         }
 
-        public static void Main()
-        {
-            var k = new Day22();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
 
         private char[][] Input()
         {
