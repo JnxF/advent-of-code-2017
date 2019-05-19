@@ -45,7 +45,7 @@ In state B:
         }
 
         [Fact]
-        public void Day22_SecondPart()
+        public void Day25_SecondPart()
         {
             var myInput = @"..#
 #..
