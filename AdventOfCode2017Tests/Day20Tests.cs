@@ -9,10 +9,16 @@ namespace AdventOfCode2017Tests
     public class Day20Tests
     {
         [Fact]
-        public void Day20()
+        public void Day20_a()
         {
             var day = new Day20();
             Assert.Equal(170, day.FirstPart());
+        }
+
+        [Fact]
+        public void Day20_b()
+        {
+            var day = new Day20();
             Assert.Equal(571, day.SecondPart());
         }
 
