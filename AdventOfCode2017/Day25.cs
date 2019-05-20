@@ -23,13 +23,6 @@ namespace AdventOfCode2017
             checksumStep = 12459852;
         }
 
-        public static void Main()
-        {
-            var k = new Day25();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
-
         Dictionary<string, (bool, bool, string, bool, bool, string)> Input()
         {
             var states = input.Replace("\r", "")
