@@ -21,13 +21,6 @@ namespace AdventOfCode2017
             iterationsPart1 = 5;
         }
 
-        public static void Main()
-        {
-            var k = new Day21();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
-
         private Dictionary<string, string> Input()
         {
             return input.Replace("\r", "")

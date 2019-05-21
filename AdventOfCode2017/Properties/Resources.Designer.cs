@@ -610,6 +610,40 @@ namespace AdventOfCode2017.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to bqyqwn (68) -&gt; wscqe, cwxspl, syogw, xnxudsh
+        ///ddswb (34)
+        ///hnkvw (320)
+        ///ibqmynm (252) -&gt; oglcdgs, tkjofj, upurae, oypvhy, bzfkt, hdvcz, cfwxyl
+        ///rkerea (87)
+        ///lcmlbj (66)
+        ///vtccvv (69)
+        ///nachvlp (20)
+        ///tmkli (66)
+        ///exuyuk (82)
+        ///ojzogs (79)
+        ///egkiqcp (37) -&gt; rxjnad, psetts
+        ///xadjes (10)
+        ///fivkqxx (121) -&gt; acvzsbe, kkmax, qcmwsvm
+        ///krgtrdn (53)
+        ///mxemqqb (267) -&gt; iuuouds, qqmvd
+        ///iwwqvoa (24)
+        ///yyecrv (59)
+        ///zjpkoar (40)
+        ///ilsgqdw (37)
+        ///bmlfd (43)
+        ///nxqwag (81)
+        ///ubbwvvl (44)
+        ///khfzis (48) -&gt; ztxcc, bvejguc
+        ///gvtcy (39)
+        ///xbxxe ( [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string Day7 {
+            get {
+                return ResourceManager.GetString("Day7", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to hwv inc 149 if clj &gt;= -5
         ///or inc 530 if hwv &gt; 144
         ///d inc 131 if f &lt; 1
