@@ -19,12 +19,6 @@ namespace AdventOfCode2017
             input = Properties.Resources.Day7;
         }
 
-        public static void Main()
-        {
-            var k = new Day7();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
 
         private Dictionary<string, HashSet<string>> Input()
         {

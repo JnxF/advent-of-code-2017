@@ -72,9 +72,10 @@ namespace AdventOfCode2017
             return tape.Where(c => c).Count();
         }
 
+        // There is nothing to do here :D
         public int SecondPart()
         {
-            throw new NotImplementedException();
+            return 0;
         }
     }
 }

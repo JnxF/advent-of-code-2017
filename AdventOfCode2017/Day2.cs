@@ -52,7 +52,7 @@ namespace AdventOfCode2017
             return total;
         }
 
-        private int DivisionOfDivisibleNumbers(int[] row)
+        private static int DivisionOfDivisibleNumbers(int[] row)
         {
             int n = row.Length;
             for (int i = 0; i < n; ++i)
