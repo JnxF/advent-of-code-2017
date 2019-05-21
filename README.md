@@ -1,6 +1,6 @@
 # Advent Of Code 2017
 
-[![Build Status](https://dev.azure.com/frml/frml/_apis/build/status/JnxF.advent-of-code-2017?branchName=master)](https://dev.azure.com/frml/frml/_build/latest?definitionId=9&branchName=master) ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/frml/frml/9.svg) [![BCH compliance](https://bettercodehub.com/edge/badge/JnxF/advent-of-code-2017?branch=master)](https://bettercodehub.com/)
+[![Build Status](https://dev.azure.com/frml/frml/_apis/build/status/JnxF.advent-of-code-2017?branchName=master)](https://dev.azure.com/frml/frml/_build/latest?definitionId=9&branchName=master) ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/frml/frml/9.svg)
 
 ## Official description
 
