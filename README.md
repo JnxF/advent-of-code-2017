@@ -17,7 +17,7 @@ You don't need a computer science background to participate - just a little prog
 | Part 2  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |    | :white_check_mark: |
 
 
-| Problem | 16                 | 17                 | 18 | 19                 | 20                 | 21 | 22                 | 23                 | 24                 | 25                 |
-|---------|--------------------|--------------------|----|--------------------|--------------------|----|--------------------|--------------------|--------------------|--------------------|
-| Part 1  | :white_check_mark: | :white_check_mark: |    | :white_check_mark: | :white_check_mark: |    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| Part 2  | :white_check_mark: | :white_check_mark: |    | :white_check_mark: | :white_check_mark: |    | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |
+| Problem | 16                 | 17                 | 18                 | 19                 | 20                 | 21 | 22                 | 23                 | 24                 | 25                 |
+|---------|--------------------|--------------------|--------------------|--------------------|--------------------|----|--------------------|--------------------|--------------------|--------------------|
+| Part 1  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |    | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| Part 2  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |    | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    |

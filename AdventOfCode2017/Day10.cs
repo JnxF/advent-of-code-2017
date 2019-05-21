@@ -22,14 +22,6 @@ namespace AdventOfCode2017
             list = Enumerable.Range(0, 256).Select(i => (byte) i).ToArray();
         }
 
-        public static void Main()
-        {
-            var k = new Day10();
-            Console.WriteLine(k.FirstPart());
-            Console.WriteLine(k.SecondPart());
-        }
-
-
         private byte[] Input()
         {
             return input.Split(",")
