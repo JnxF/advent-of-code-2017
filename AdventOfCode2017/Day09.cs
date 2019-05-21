@@ -1,17 +1,15 @@
-﻿using System;
-
-namespace AdventOfCode2017
+﻿namespace AdventOfCode2017
 {
-    public class Day9 : ISolver<int>
+    public class Day09 : ISolver<int>
     {
         public readonly string input;
 
-        public Day9(string input)
+        public Day09(string input)
         {
             this.input = input;
         }
 
-        public Day9()
+        public Day09()
         {
             input = Properties.Resources.Day9;
         }

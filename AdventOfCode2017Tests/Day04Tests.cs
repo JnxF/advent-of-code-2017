@@ -3,12 +3,12 @@ using Xunit;
 
 namespace AdventOfCode2017Tests
 {
-    public class Day4Tests
+    public class Day04Tests
     {
         [Fact]
-        public void Day4()
+        public void Day04()
         {
-            var day = new Day4();
+            var day = new Day04();
             Assert.Equal(386, day.FirstPart());
             Assert.Equal(208, day.SecondPart());
         }
@@ -17,9 +17,9 @@ namespace AdventOfCode2017Tests
         [InlineData("aa bb cc dd ee", 1)]
         [InlineData("aa bb cc dd aa", 0)]
         [InlineData("aa bb cc dd aaa", 1)]
-        public void Day4_FirstPart(string input, int output)
+        public void Day04_FirstPart(string input, int output)
         {
-            Assert.Equal(output, new Day4(input).FirstPart());
+            Assert.Equal(output, new Day04(input).FirstPart());
         }
 
         [Theory]
@@ -28,9 +28,9 @@ namespace AdventOfCode2017Tests
         [InlineData("a ab abc abd abf abj", 1)]
         [InlineData("iiii oiii ooii oooi oooo", 1)]
         [InlineData("oiii ioii iioi iiio", 0)]
-        public void Day4_SecondPart(string input, int output)
+        public void Day04_SecondPart(string input, int output)
         {
-            Assert.Equal(output, new Day4(input).SecondPart());
+            Assert.Equal(output, new Day04(input).SecondPart());
         }
     }
 }

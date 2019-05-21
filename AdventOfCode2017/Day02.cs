@@ -1,20 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace AdventOfCode2017
 {
-    public class Day2 : ISolver<int>
+    public class Day02 : ISolver<int>
     {
         public readonly string input;
 
-        public Day2(string input)
+        public Day02(string input)
         {
             this.input = input;
         }
 
-        public Day2()
+        public Day02()
         {
             input = Properties.Resources.Day2;
         }

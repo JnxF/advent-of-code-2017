@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-
-namespace AdventOfCode2017
+﻿namespace AdventOfCode2017
 {
     public class Day19 : ISolver<string>
     {

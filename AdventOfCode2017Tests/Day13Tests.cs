@@ -1,7 +1,4 @@
 ﻿using AdventOfCode2017;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace AdventOfCode2017Tests

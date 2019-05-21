@@ -5,16 +5,16 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode2017
 {
-    public class Day4 : ISolver<int>
+    public class Day04 : ISolver<int>
     {
         public readonly string input;
 
-        public Day4(string input)
+        public Day04(string input)
         {
             this.input = input;
         }
 
-        public Day4()
+        public Day04()
         {
             input = Properties.Resources.Day4;
         }

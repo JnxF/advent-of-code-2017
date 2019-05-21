@@ -2,11 +2,11 @@
 
 namespace AdventOfCode2017
 {
-    public class Day3 : ISolver<int>
+    public class Day03 : ISolver<int>
     {
         public readonly int input;
 
-        public Day3(int input)
+        public Day03(int input)
         {
             this.input = input;
         }

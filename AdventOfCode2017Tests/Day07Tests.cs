@@ -1,23 +1,20 @@
 ﻿using AdventOfCode2017;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace AdventOfCode2017Tests
 {
-    public class Day7Tests
+    public class Day07Tests
     {
         [Fact]
-        public void Day7()
+        public void Day07()
         {
-            var day = new Day7();
+            var day = new Day07();
             Assert.Equal("eqgvf", day.FirstPart());
             Assert.Equal("757", day.SecondPart());
         }
 
         [Fact]
-        public void Day7_FirstPart()
+        public void Day07_FirstPart()
         {
             var myInput = @"pbga (66)
 xhth (57)
@@ -32,11 +29,11 @@ jptl (61)
 ugml (68) -> gyxo, ebii, jptl
 gyxo (61)
 cntj (57)";
-            Assert.Equal("tknk", new Day7(myInput).FirstPart());
+            Assert.Equal("tknk", new Day07(myInput).FirstPart());
         }
 
         [Fact]
-        public void Day7_SecondPart()
+        public void Day07_SecondPart()
         {
             var myInput = @"pbga (66)
 xhth (57)
@@ -51,7 +48,7 @@ jptl (61)
 ugml (68) -> gyxo, ebii, jptl
 gyxo (61)
 cntj (57)";
-            Assert.Equal("60", new Day7(myInput).SecondPart());
+            Assert.Equal("60", new Day07(myInput).SecondPart());
         }
 
     }

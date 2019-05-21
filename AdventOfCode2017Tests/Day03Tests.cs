@@ -3,12 +3,12 @@ using Xunit;
 
 namespace AdventOfCode2017Tests
 {
-    public class Day3Tests
+    public class Day03Tests
     {
         [Fact]
-        public void Day3()
+        public void Day03()
         {
-            var day = new Day3(289326);
+            var day = new Day03(289326);
             Assert.Equal(419, day.FirstPart());
             Assert.Equal(289326, day.SecondPart());
         }
@@ -21,7 +21,7 @@ namespace AdventOfCode2017Tests
         [InlineData(289326, 419)]
         public void Day1_FirstPart(int input, int output)
         {
-            Assert.Equal(output, new Day3(input).FirstPart());
+            Assert.Equal(output, new Day03(input).FirstPart());
         }
 
     }
