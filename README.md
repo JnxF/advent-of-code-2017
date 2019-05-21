@@ -1,6 +1,13 @@
 # Advent Of Code 2017
-
-[![Build Status](https://dev.azure.com/frml/frml/_apis/build/status/JnxF.advent-of-code-2017?branchName=master)](https://dev.azure.com/frml/frml/_build/latest?definitionId=9&branchName=master) ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/frml/frml/9.svg) [![BCH compliance](https://bettercodehub.com/edge/badge/JnxF/advent-of-code-2017?branch=master)](https://bettercodehub.com/)
+[![HitCount](http://hits.dwyl.io/JnxF/advent-of-code-2017.svg)](http://hits.dwyl.io/JnxF/advent-of-code-2017)
+[![Stars](https://img.shields.io/github/stars/JnxF/advent-of-code-2017.svg)](https://GitHub.com/JnxF/advent-of-code-2017/stargazers/)
+[![Forks](https://img.shields.io/github/forks/JnxF/advent-of-code-2017.svg)](https://GitHub.com/JnxF/advent-of-code-2017/network/)
+[![Repo Size](https://img.shields.io/github/repo-size/JnxF/advent-of-code-2017.svg)](https://github.com/JnxF/advent-of-code-2017)
+[![Contributors](https://img.shields.io/github/contributors/JnxF/advent-of-code-2017.svg)](https://GitHub.com/JnxF/advent-of-code-2017/graphs/contributors/)
+[![GitHub License](https://img.shields.io/github/license/JnxF/advent-of-code-2017.svg)](https://github.com/JnxF/advent-of-code-2017/blob/master/LICENSE)
+<br>
+[![Build Status](https://dev.azure.com/frml/frml/_apis/build/status/JnxF.advent-of-code-2017?branchName=master)](https://dev.azure.com/frml/frml/_build/latest?definitionId=9&branchName=master)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/frml/frml/9.svg)
 
 ## Official description
 
