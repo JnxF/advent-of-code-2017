@@ -20,4 +20,4 @@ You don't need a computer science background to participate - just a little prog
 
 All problems have been solved, and tests are included for all of the problems.
 
-<center><img src="http://i68.tinypic.com/hvz6rs.jpg"></center>
+![Solved problems image](https://user-images.githubusercontent.com/1232044/58368128-eae68880-7ee8-11e9-8708-e1e257d87ccf.png)
