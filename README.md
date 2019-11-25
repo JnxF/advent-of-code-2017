@@ -5,10 +5,6 @@
 [![Repo Size](https://img.shields.io/github/repo-size/JnxF/advent-of-code-2017.svg)](https://github.com/JnxF/advent-of-code-2017)
 [![Contributors](https://img.shields.io/github/contributors/JnxF/advent-of-code-2017.svg)](https://GitHub.com/JnxF/advent-of-code-2017/graphs/contributors/)
 [![GitHub License](https://img.shields.io/github/license/JnxF/advent-of-code-2017.svg)](https://github.com/JnxF/advent-of-code-2017/blob/master/LICENSE)
-<br>
-[![Build Status](https://dev.azure.com/frml/frml/_apis/build/status/JnxF.advent-of-code-2017?branchName=master)](https://dev.azure.com/frml/frml/_build/latest?definitionId=9&branchName=master)
-![Azure DevOps tests](https://img.shields.io/azure-devops/tests/frml/frml/9.svg?compact_message)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/frml/frml/9.svg)
 
 ## Official description
 
